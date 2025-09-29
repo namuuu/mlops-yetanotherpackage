@@ -48,7 +48,7 @@ jobs:
 
       - name: Publish to PyPi
         run: |
-          uv publish --token "${{ secrets.PYPI_TOKEN }}"
+          uv publish --token "${{ secrets.PYPI_KEY }}"
 
       - name: Upload distributions
         uses: actions/upload-artifact@v4
