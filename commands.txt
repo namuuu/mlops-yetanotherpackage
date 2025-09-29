@@ -1,0 +1,14 @@
+Active l'environnement virtuel:
+.venv\Scripts\activate
+
+Synchroniser et télécharger les paquets:
+uv sync
+
+Tester le coverage:
+uv run pytest -q --cov=yetanotherpackage --cov-report=term-missing --cov-report=html
+
+Construire le projet:
+uv build
+
+Publier le paquet:
+uv publish --token ""
